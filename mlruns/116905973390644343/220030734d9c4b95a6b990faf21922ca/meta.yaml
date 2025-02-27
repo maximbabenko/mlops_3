@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ilona/dvc-project/mlruns/116905973390644343/220030734d9c4b95a6b990faf21922ca/artifacts
+end_time: 1734109049752
+entry_point_name: ''
+experiment_id: '116905973390644343'
+lifecycle_stage: active
+run_id: 220030734d9c4b95a6b990faf21922ca
+run_name: Decision Tree (max_depth=15)_20241213_215725
+run_uuid: 220030734d9c4b95a6b990faf21922ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734109045502
+status: 3
+tags: []
+user_id: ilona

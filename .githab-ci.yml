@@ -1,0 +1,41 @@
+stages:
+  - pull
+  - repro
+  - push
+
+before_script:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+  - echo "$GCP_SERVICE_ACCOUNT_KEY" > application_default_credentials.json
+  - curl https://sdk.cloud.google.com | bash
+  - export PATH="$HOME/google-cloud-sdk/bin:$PATH"
+  - gcloud auth activate-service-account --key-file=application_default_credentials.json
+  - dvc remote modify gdisk gdrive_use_service_account true
+  - dvc remote modify gdisk gdrive_service_account_json_file_path application_default_credentials.json
+
+dvc_pull:
+  image: python:3.9
+  stage: pull
+  script:
+    - dvc pull
+
+dvc_repro:
+  image: python:3.9
+  stage: repro
+  script:
+    - dvc pull
+    - dvc repro
+
+dvc_push:
+  image: python:3.9
+  stage: push
+  script:
+    - dvc pull
+    - dvc repro
+    - dvc push
+    - git add .
+    - git config user.email "chashserq@gmail.com"
+    - git config user.name "chashserq"
+    - git commit -m "Update DVC outputs"
+    - git push origin HEAD:main
+

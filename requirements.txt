@@ -1,0 +1,6 @@
+dvc
+dvc[all]
+numpy
+pandas
+scikit-learn
+gcloud

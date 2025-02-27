@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734109037303
+current_stage: None
+description: null
+last_updated_timestamp: 1734109037303
+name: Logistic Regression (C=1.0)
+run_id: e000f7d94c01478c8f73583e83c2f2e6
+run_link: null
+source: file:///Users/ilona/dvc-project/mlruns/116905973390644343/e000f7d94c01478c8f73583e83c2f2e6/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/ilona/dvc-project/mlruns/116905973390644343/e000f7d94c01478c8f73583e83c2f2e6/artifacts/model
+user_id: null
+version: 1

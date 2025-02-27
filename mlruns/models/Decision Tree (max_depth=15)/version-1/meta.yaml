@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734109049748
+current_stage: None
+description: null
+last_updated_timestamp: 1734109049748
+name: Decision Tree (max_depth=15)
+run_id: 220030734d9c4b95a6b990faf21922ca
+run_link: null
+source: file:///Users/ilona/dvc-project/mlruns/116905973390644343/220030734d9c4b95a6b990faf21922ca/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/ilona/dvc-project/mlruns/116905973390644343/220030734d9c4b95a6b990faf21922ca/artifacts/model
+user_id: null
+version: 1
